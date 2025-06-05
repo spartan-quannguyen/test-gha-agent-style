@@ -1,0 +1,14 @@
+name: test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  gotest:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: test service
+        run: echo "Testing service..."

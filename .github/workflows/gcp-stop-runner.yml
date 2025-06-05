@@ -1,0 +1,17 @@
+name: Stop Runner Agent
+
+on:
+  workflow_run:
+    workflows: ["test"]
+    types:
+      - completed
+
+jobs:
+  stop-runner:
+    name: Stop Runner Agent
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Stop Runner Agent
+        run: |
+          echo "Stopping runner..."

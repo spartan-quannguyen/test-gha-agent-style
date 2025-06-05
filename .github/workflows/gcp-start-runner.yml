@@ -1,0 +1,16 @@
+name: Start Runner Agent
+on:
+  workflow_run:
+    workflows: ["test"]
+    types:
+      - requested
+jobs:
+  start-runner:
+    name: Start Runner Agent
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Start Runner Agent
+        run: |
+          echo "Starting runner..."
+  

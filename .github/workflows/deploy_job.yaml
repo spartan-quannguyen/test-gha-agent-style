@@ -1,0 +1,12 @@
+name: deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  gotest:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: deploy service
+        run: echo "Deploying ..."
