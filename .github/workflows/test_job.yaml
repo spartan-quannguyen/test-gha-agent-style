@@ -12,3 +12,5 @@ jobs:
     steps: 
       - name: test service
         run: echo "Testing service..."
+      - name: sleep
+        run: sleep 100
