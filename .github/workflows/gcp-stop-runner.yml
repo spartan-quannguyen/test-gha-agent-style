@@ -2,7 +2,7 @@ name: Stop Runner Agent
 
 on:
   workflow_run:
-    workflows: ["test"]
+    workflows: ["test", "deploy"]
     types:
       - completed
 
